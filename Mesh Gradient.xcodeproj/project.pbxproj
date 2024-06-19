@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		72AA0A202C239CAF00751D41 /* Mesh_GradientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AA0A1F2C239CAF00751D41 /* Mesh_GradientApp.swift */; };
+		72AA0A222C239CAF00751D41 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AA0A212C239CAF00751D41 /* ContentView.swift */; };
+		72AA0A242C239CB000751D41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72AA0A232C239CB000751D41 /* Assets.xcassets */; };
+		72AA0A272C239CB000751D41 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72AA0A262C239CB000751D41 /* Preview Assets.xcassets */; };
+		72AA0A312C239CB000751D41 /* Mesh_GradientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AA0A302C239CB000751D41 /* Mesh_GradientTests.swift */; };
+		72AA0A3B2C239CB000751D41 /* Mesh_GradientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AA0A3A2C239CB000751D41 /* Mesh_GradientUITests.swift */; };
+		72AA0A3D2C239CB000751D41 /* Mesh_GradientUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AA0A3C2C239CB000751D41 /* Mesh_GradientUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		72AA0A2D2C239CB000751D41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72AA0A142C239CAF00751D41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72AA0A1B2C239CAF00751D41;
+			remoteInfo = "Mesh Gradient";
+		};
+		72AA0A372C239CB000751D41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72AA0A142C239CAF00751D41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72AA0A1B2C239CAF00751D41;
+			remoteInfo = "Mesh Gradient";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		72AA0A1C2C239CAF00751D41 /* Mesh Gradient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mesh Gradient.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		72AA0A1F2C239CAF00751D41 /* Mesh_GradientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mesh_GradientApp.swift; sourceTree = "<group>"; };
+		72AA0A212C239CAF00751D41 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		72AA0A232C239CB000751D41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		72AA0A262C239CB000751D41 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		72AA0A2C2C239CB000751D41 /* Mesh GradientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mesh GradientTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		72AA0A302C239CB000751D41 /* Mesh_GradientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mesh_GradientTests.swift; sourceTree = "<group>"; };
+		72AA0A362C239CB000751D41 /* Mesh GradientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mesh GradientUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		72AA0A3A2C239CB000751D41 /* Mesh_GradientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mesh_GradientUITests.swift; sourceTree = "<group>"; };
+		72AA0A3C2C239CB000751D41 /* Mesh_GradientUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mesh_GradientUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		72AA0A192C239CAF00751D41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72AA0A292C239CB000751D41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72AA0A332C239CB000751D41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		72AA0A132C239CAF00751D41 = {
+			isa = PBXGroup;
+			children = (
+				72AA0A1E2C239CAF00751D41 /* Mesh Gradient */,
+				72AA0A2F2C239CB000751D41 /* Mesh GradientTests */,
+				72AA0A392C239CB000751D41 /* Mesh GradientUITests */,
+				72AA0A1D2C239CAF00751D41 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		72AA0A1D2C239CAF00751D41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				72AA0A1C2C239CAF00751D41 /* Mesh Gradient.app */,
+				72AA0A2C2C239CB000751D41 /* Mesh GradientTests.xctest */,
+				72AA0A362C239CB000751D41 /* Mesh GradientUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		72AA0A1E2C239CAF00751D41 /* Mesh Gradient */ = {
+			isa = PBXGroup;
+			children = (
+				72AA0A1F2C239CAF00751D41 /* Mesh_GradientApp.swift */,
+				72AA0A212C239CAF00751D41 /* ContentView.swift */,
+				72AA0A232C239CB000751D41 /* Assets.xcassets */,
+				72AA0A252C239CB000751D41 /* Preview Content */,
+			);
+			path = "Mesh Gradient";
+			sourceTree = "<group>";
+		};
+		72AA0A252C239CB000751D41 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				72AA0A262C239CB000751D41 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		72AA0A2F2C239CB000751D41 /* Mesh GradientTests */ = {
+			isa = PBXGroup;
+			children = (
+				72AA0A302C239CB000751D41 /* Mesh_GradientTests.swift */,
+			);
+			path = "Mesh GradientTests";
+			sourceTree = "<group>";
+		};
+		72AA0A392C239CB000751D41 /* Mesh GradientUITests */ = {
+			isa = PBXGroup;
+			children = (
+				72AA0A3A2C239CB000751D41 /* Mesh_GradientUITests.swift */,
+				72AA0A3C2C239CB000751D41 /* Mesh_GradientUITestsLaunchTests.swift */,
+			);
+			path = "Mesh GradientUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		72AA0A1B2C239CAF00751D41 /* Mesh Gradient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72AA0A402C239CB000751D41 /* Build configuration list for PBXNativeTarget "Mesh Gradient" */;
+			buildPhases = (
+				72AA0A182C239CAF00751D41 /* Sources */,
+				72AA0A192C239CAF00751D41 /* Frameworks */,
+				72AA0A1A2C239CAF00751D41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mesh Gradient";
+			productName = "Mesh Gradient";
+			productReference = 72AA0A1C2C239CAF00751D41 /* Mesh Gradient.app */;
+			productType = "com.apple.product-type.application";
+		};
+		72AA0A2B2C239CB000751D41 /* Mesh GradientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72AA0A432C239CB000751D41 /* Build configuration list for PBXNativeTarget "Mesh GradientTests" */;
+			buildPhases = (
+				72AA0A282C239CB000751D41 /* Sources */,
+				72AA0A292C239CB000751D41 /* Frameworks */,
+				72AA0A2A2C239CB000751D41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				72AA0A2E2C239CB000751D41 /* PBXTargetDependency */,
+			);
+			name = "Mesh GradientTests";
+			productName = "Mesh GradientTests";
+			productReference = 72AA0A2C2C239CB000751D41 /* Mesh GradientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		72AA0A352C239CB000751D41 /* Mesh GradientUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72AA0A462C239CB000751D41 /* Build configuration list for PBXNativeTarget "Mesh GradientUITests" */;
+			buildPhases = (
+				72AA0A322C239CB000751D41 /* Sources */,
+				72AA0A332C239CB000751D41 /* Frameworks */,
+				72AA0A342C239CB000751D41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				72AA0A382C239CB000751D41 /* PBXTargetDependency */,
+			);
+			name = "Mesh GradientUITests";
+			productName = "Mesh GradientUITests";
+			productReference = 72AA0A362C239CB000751D41 /* Mesh GradientUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		72AA0A142C239CAF00751D41 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					72AA0A1B2C239CAF00751D41 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					72AA0A2B2C239CB000751D41 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 72AA0A1B2C239CAF00751D41;
+					};
+					72AA0A352C239CB000751D41 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 72AA0A1B2C239CAF00751D41;
+					};
+				};
+			};
+			buildConfigurationList = 72AA0A172C239CAF00751D41 /* Build configuration list for PBXProject "Mesh Gradient" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 72AA0A132C239CAF00751D41;
+			productRefGroup = 72AA0A1D2C239CAF00751D41 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				72AA0A1B2C239CAF00751D41 /* Mesh Gradient */,
+				72AA0A2B2C239CB000751D41 /* Mesh GradientTests */,
+				72AA0A352C239CB000751D41 /* Mesh GradientUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		72AA0A1A2C239CAF00751D41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72AA0A272C239CB000751D41 /* Preview Assets.xcassets in Resources */,
+				72AA0A242C239CB000751D41 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72AA0A2A2C239CB000751D41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72AA0A342C239CB000751D41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		72AA0A182C239CAF00751D41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72AA0A222C239CAF00751D41 /* ContentView.swift in Sources */,
+				72AA0A202C239CAF00751D41 /* Mesh_GradientApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72AA0A282C239CB000751D41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72AA0A312C239CB000751D41 /* Mesh_GradientTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72AA0A322C239CB000751D41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72AA0A3B2C239CB000751D41 /* Mesh_GradientUITests.swift in Sources */,
+				72AA0A3D2C239CB000751D41 /* Mesh_GradientUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		72AA0A2E2C239CB000751D41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72AA0A1B2C239CAF00751D41 /* Mesh Gradient */;
+			targetProxy = 72AA0A2D2C239CB000751D41 /* PBXContainerItemProxy */;
+		};
+		72AA0A382C239CB000751D41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72AA0A1B2C239CAF00751D41 /* Mesh Gradient */;
+			targetProxy = 72AA0A372C239CB000751D41 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		72AA0A3E2C239CB000751D41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		72AA0A3F2C239CB000751D41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		72AA0A412C239CB000751D41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Mesh Gradient/Preview Content\"";
+				DEVELOPMENT_TEAM = 63SM7D7UXW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "vry.Mesh-Gradient";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		72AA0A422C239CB000751D41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Mesh Gradient/Preview Content\"";
+				DEVELOPMENT_TEAM = 63SM7D7UXW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "vry.Mesh-Gradient";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		72AA0A442C239CB000751D41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 63SM7D7UXW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "vry.Mesh-GradientTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mesh Gradient.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Mesh Gradient";
+			};
+			name = Debug;
+		};
+		72AA0A452C239CB000751D41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 63SM7D7UXW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "vry.Mesh-GradientTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mesh Gradient.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Mesh Gradient";
+			};
+			name = Release;
+		};
+		72AA0A472C239CB000751D41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 63SM7D7UXW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "vry.Mesh-GradientUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mesh Gradient";
+			};
+			name = Debug;
+		};
+		72AA0A482C239CB000751D41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 63SM7D7UXW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "vry.Mesh-GradientUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mesh Gradient";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		72AA0A172C239CAF00751D41 /* Build configuration list for PBXProject "Mesh Gradient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72AA0A3E2C239CB000751D41 /* Debug */,
+				72AA0A3F2C239CB000751D41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72AA0A402C239CB000751D41 /* Build configuration list for PBXNativeTarget "Mesh Gradient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72AA0A412C239CB000751D41 /* Debug */,
+				72AA0A422C239CB000751D41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72AA0A432C239CB000751D41 /* Build configuration list for PBXNativeTarget "Mesh GradientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72AA0A442C239CB000751D41 /* Debug */,
+				72AA0A452C239CB000751D41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72AA0A462C239CB000751D41 /* Build configuration list for PBXNativeTarget "Mesh GradientUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72AA0A472C239CB000751D41 /* Debug */,
+				72AA0A482C239CB000751D41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 72AA0A142C239CAF00751D41 /* Project object */;
+}
