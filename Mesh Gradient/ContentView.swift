@@ -8,6 +8,7 @@
 import SwiftUI
 
 //Material Design 2 Color System
+
 struct Red {
     static let Red50: Color = Color(red: 1, green: 0.92, blue: 0.93)
     static let Red100: Color = Color(red: 1, green: 0.8, blue: 0.82)
@@ -306,6 +307,7 @@ struct Neutral {
 }
 
 //Material Design 2 Typography
+
 struct Heading {
 static let h1: CGFloat = 96
 static let h2: CGFloat = 60
@@ -332,27 +334,46 @@ struct Overline {
 static let Text: CGFloat = 10
 }
 
+
+
 struct ContentView: View {
     @State private var isAnimating = false
-    let T1 = [ Amber.Amber900, .black, Amber.Amber900,
+  
+    let T1 = [ DeepPurple.DeepPurple600, .black, LightGreen.LightGreen600,
              .black, .black, .black,
-               Amber.Amber900, .black,  Amber.Amber900
+               Amber.Amber900, .black,  LightBlue.LightBlue600
             ]
     
-    let T2 = [ .black, .black, .black,
-               .black, Amber.Amber900, .black,
-               .black, .black,  .black
+    let T2 = [ .black, LightGreen.LightGreen600, .black,
+               DeepPurple.DeepPurple600, .black, LightBlue.LightBlue600,
+               .black, Amber.Amber900,  .black
               ]
-    
-//    @State private var selectedPattern: String = "T1"
-    
-    
 
     var body: some View {
-        let currentColors = isAnimating ? T2 : T1
+    let currentColors = isAnimating ? T2 : T1
         
         ZStack (alignment: .center)
             {
+                
+                VStack {
+                    Spacer()
+                    Text("MESH")
+                        .font(.system(size: 200))
+                        .foregroundColor(BlueGray.BlueGray50)
+                        .fontWeight(.bold)
+                        .opacity(0.1)
+                        .blendMode(.normal)
+                    Spacer(minLength: 540)
+                    Text("GRAD")
+                        .font(.system(size: 200))
+                        .foregroundColor(BlueGray.BlueGray50)
+                        .fontWeight(.bold)
+                        .opacity(0.1)
+                        .blendMode(.normal)
+                    Spacer()
+                }
+                .frame(maxWidth: .infinity, alignment: .center)
+            
             MeshGradient(
             width: 3,
             height: 3,
@@ -366,47 +387,260 @@ struct ContentView: View {
             )
             .background(Color(DeepOrange.DeepOrange900))
             .blendMode(.normal).opacity(1.0)
-            .frame(width: 300, height: 300)
-            .ignoresSafeArea()
-            .cornerRadius(24)
+            .frame(width: 440, height: 440)
+            .blendMode(.normal)
+//            .blur(radius: 4)
+                
+//                VStack ()
+//                {
+//                    HStack(){
+//                        Text("0.0")
+//                            .font(.system(size: 14))
+//                            .foregroundColor(Neutral.White)
+//                            .blendMode(.normal)
+//                        
+//                        Spacer()
+//                        
+//                        Text("0.1")
+//                            .font(.system(size: 14))
+//                            .foregroundColor(Neutral.White)
+//                            .blendMode(.normal)
+//                        
+//                        Spacer()
+//                        
+//                        Text("0.2")
+//                            .font(.system(size: 14))
+//                            .foregroundColor(Neutral.White)
+//                            .blendMode(.normal)
+//                        
+//                        Spacer()
+//                        
+//                        Text("0.3")
+//                            .font(.system(size: 14))
+//                            .foregroundColor(Neutral.White)
+//                            .blendMode(.normal)
+//                        
+//                        Spacer()
+//                        
+//                        Text("0.4")
+//                            .font(.system(size: 14))
+//                            .foregroundColor(Neutral.White)
+//                            .blendMode(.normal)
+//                        
+//                        Spacer()
+//                        
+//                        Text("0.5")
+//                            .font(.system(size: 14))
+//                            .foregroundColor(Neutral.White)
+//                            .blendMode(.normal)
+//                        
+//                        Spacer()
+//                        
+//                        Text("0.6")
+//                            .font(.system(size: 14))
+//                            .foregroundColor(Neutral.White)
+//                            .blendMode(.normal)
+//                        
+//                        Spacer()
+//                        
+//                        
+//                        Text("0.7")
+//                            .font(.system(size: 14))
+//                            .foregroundColor(Neutral.White)
+//                            .blendMode(.normal)
+//                        
+//                        Spacer()
+//                        
+//                        Text("0.8")
+//                            .font(.system(size: 14))
+//                            .foregroundColor(Neutral.White)
+//                            .blendMode(.normal)
+//                        
+//                        Spacer()
+//                        
+//                        
+//                        Text("0.9")
+//                            .font(.system(size: 14))
+//                            .foregroundColor(Neutral.White)
+//                            .blendMode(.normal)
+//                        
+//                        Spacer()
+//                        
+//                        
+//                        Text("1.0")
+//                            .font(.system(size: 14))
+//                            .foregroundColor(Neutral.White)
+//                            .blendMode(.normal)
+//                    }
+//                    .frame(width: 460)
+//                    
+//                    HStack(){
+//                        Text("0.0")
+//                            .font(.system(size: 14))
+//                            .foregroundColor(Neutral.White)
+//                            .blendMode(.normal)
+//                        
+//                        Spacer()
+//                        
+//                        Text("0.1")
+//                            .font(.system(size: 14))
+//                            .foregroundColor(Neutral.White)
+//                            .blendMode(.normal)
+//                        
+//                        Spacer()
+//                        
+//                        Text("0.2")
+//                            .font(.system(size: 14))
+//                            .foregroundColor(Neutral.White)
+//                            .blendMode(.normal)
+//                        
+//                        Spacer()
+//                        
+//                        Text("0.3")
+//                            .font(.system(size: 14))
+//                            .foregroundColor(Neutral.White)
+//                            .blendMode(.normal)
+//                        
+//                        Spacer()
+//                        
+//                        Text("0.4")
+//                            .font(.system(size: 14))
+//                            .foregroundColor(Neutral.White)
+//                            .blendMode(.normal)
+//                        
+//                        Spacer()
+//                        
+//                        Text("0.5")
+//                            .font(.system(size: 14))
+//                            .foregroundColor(Neutral.White)
+//                            .blendMode(.normal)
+//                        
+//                        Spacer()
+//                        
+//                        Text("0.6")
+//                            .font(.system(size: 14))
+//                            .foregroundColor(Neutral.White)
+//                            .blendMode(.normal)
+//                        
+//                        Spacer()
+//                        
+//                        
+//                        Text("0.7")
+//                            .font(.system(size: 14))
+//                            .foregroundColor(Neutral.White)
+//                            .blendMode(.normal)
+//                        
+//                        Spacer()
+//                        
+//                        Text("0.8")
+//                            .font(.system(size: 14))
+//                            .foregroundColor(Neutral.White)
+//                            .blendMode(.normal)
+//                        
+//                        Spacer()
+//                        
+//                        
+//                        Text("0.9")
+//                            .font(.system(size: 14))
+//                            .foregroundColor(Neutral.White)
+//                            .blendMode(.normal)
+//                        
+//                        Spacer()
+//                        
+//                        
+//                        Text("1.0")
+//                            .font(.system(size: 14))
+//                            .foregroundColor(Neutral.White)
+//                            .blendMode(.normal)
+//                    }
+//                    .frame(width: 460)
+//                    
+//                    
+//                }
 
             
             VStack {
+            
                 
                 Spacer(minLength: 0)
                 
-                VStack {
+                HStack {
+                    Spacer()
+                    VStack {
+                        Text("0.0, 0.0")
+                            .font(.system(size: Button.Text))
+                            .foregroundColor(Neutral.White)
+                            .blendMode(.normal)
+                        Text("Top Left")
+                            .font(.system(size: 14))
+                            .foregroundColor(Neutral.White)
+                            .blendMode(.normal)
+                    }
+                    Spacer()
                     
-                    Text("Mesh Gradients")
-                        .font(.system(size: Heading.h5))
-                        .foregroundColor(Neutral.White)
-                        .blendMode(.normal)
-                    Text("The Visual Code")
-                        .font(.system(size: Heading.h6))
-                        .foregroundColor(Gray.Gray500)
-                        .blendMode(.normal)
+                    VStack {
+                        Text("0.5, 0.0")
+                            .font(.system(size: Button.Text))
+                            .foregroundColor(Neutral.White)
+                            .blendMode(.normal)
+                        Text("Top Middle")
+                            .font(.system(size: 14))
+                            .foregroundColor(Neutral.White)
+                            .blendMode(.normal)
+                    }
+                    Spacer()
+                    
+                    VStack {
+                        Text("1.0, 0.0")
+                            .font(.system(size: Button.Text))
+                            .foregroundColor(Neutral.White)
+                            .blendMode(.normal)
+                        Text("Top Right")
+                            .font(.system(size: 14))
+                            .foregroundColor(Neutral.White)
+                            .blendMode(.normal)
+                    }
+                    Spacer()
                 }
                 
                 Spacer(minLength: 0)
                 
                 HStack {
                     Spacer()
-                    Text("[0.0, 0.0]")
-                        .font(.system(size: 14))
-                        .foregroundColor(Neutral.White)
-                        .blendMode(.normal)
+                    VStack {
+                        Text("0.0, 0.5")
+                            .font(.system(size: Button.Text))
+                            .foregroundColor(Neutral.White)
+                            .blendMode(.normal)
+                        Text("Middle Left")
+                            .font(.system(size: 14))
+                            .foregroundColor(Neutral.White)
+                            .blendMode(.normal)
+                    }
                     Spacer()
                     
-                    Text("[0.5, 0.0]")
-                        .font(.system(size: 14))
-                        .foregroundColor(Neutral.White)
-                        .blendMode(.normal)
+                    VStack {
+                        Text("0.5, 0.5")
+                            .font(.system(size: Button.Text))
+                            .foregroundColor(Neutral.White)
+                            .blendMode(.normal)
+                        Text("Middle Middle")
+                            .font(.system(size: 14))
+                            .foregroundColor(Neutral.White)
+                            .blendMode(.normal)
+                    }
                     Spacer()
                     
-                    Text("[1.0, 0.0]")
-                        .font(.system(size: 14))
-                        .foregroundColor(Neutral.White)
-                        .blendMode(.normal)
+                    VStack {
+                        Text("1.0, 0.5")
+                            .font(.system(size: Button.Text))
+                            .foregroundColor(Neutral.White)
+                            .blendMode(.normal)
+                        Text("Middle Right")
+                            .font(.system(size: 14))
+                            .foregroundColor(Neutral.White)
+                            .blendMode(.normal)
+                    }
                     Spacer()
                 }
                 
@@ -414,82 +648,63 @@ struct ContentView: View {
                 
                 HStack {
                     Spacer()
-                    Text("[0.0, 0.5]")
-                        .font(.system(size: 14))
-                        .foregroundColor(Neutral.White)
-                        .blendMode(.normal)
+                    VStack {
+                        Text("0.0, 1.0")
+                            .font(.system(size: Button.Text))
+                            .foregroundColor(Neutral.White)
+                            .blendMode(.normal)
+                        Text("Bottom Left")
+                            .font(.system(size: 14))
+                            .foregroundColor(Neutral.White)
+                            .blendMode(.normal)
+                    }
                     Spacer()
                     
-                    Text("[0.5, 0.5]")
-                        .font(.system(size: 14))
-                        .foregroundColor(Neutral.White)
-                        .blendMode(.normal)
+                    VStack {
+                        Text("0.5, 1.0")
+                            .font(.system(size: Button.Text))
+                            .foregroundColor(Neutral.White)
+                            .blendMode(.normal)
+                        Text("Bottom Middle")
+                            .font(.system(size: 14))
+                            .foregroundColor(Neutral.White)
+                            .blendMode(.normal)
+                    }
                     Spacer()
                     
-                    Text("[1.0, 0.5]")
-                        .font(.system(size: 14))
-                        .foregroundColor(Neutral.White)
-                        .blendMode(.normal)
-                    Spacer()
-                }
-                
-                Spacer(minLength: 0)
-                
-                HStack {
+                    VStack {
+                        Text("1.0, 1.0")
+                            .font(.system(size: Button.Text))
+                            .foregroundColor(Neutral.White)
+                            .blendMode(.normal)
+                        Text("Bottom Right")
+                            .font(.system(size: 14))
+                            .foregroundColor(Neutral.White)
+                            .blendMode(.normal)
+                    }
                     Spacer(minLength: 2)
-                    Text("[0.0, 1.0]")
-                        .font(.system(size: 14))
-                        .foregroundColor(Neutral.White)
-                        .blendMode(.normal)
-                    Spacer()
-                    
-                    Text("[0.5, 1.0]")
-                        .font(.system(size: 14))
-                        .foregroundColor(Neutral.White)
-                        .blendMode(.normal)
-                    Spacer()
-                    
-                    Text("[1.0, 1.0]")
-                        .font(.system(size: 14))
-                        .foregroundColor(Neutral.White)
-                        .blendMode(.normal)
-                    Spacer(minLength: 2)
-                }
-                
-                Spacer(minLength: 0)
-                
-                VStack {
-                    Text("U from Left to Right")
-                        .font(.system(size: Heading.h5))
-                        .foregroundColor(Neutral.White)
-                        .blendMode(.normal)
-                    
-                    Text("It's similar to the UV grid in the 3d software")
-                        .font(.system(size: 14))
-                        .foregroundColor(Gray.Gray600)
-                        .blendMode(.normal)
-                        .frame(width: 300)
                 }
                 
                 Spacer(minLength: 0)
                 
                 }
-                .frame(width: 540, height: 930)
+                .frame(width: 800, height: 860)
                 }
         
                 .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
                 .ignoresSafeArea()
             
+      
 
                 .onAppear {
-                    withAnimation(.linear(duration: 4).repeatForever(autoreverses: true)) {
+                    withAnimation(Animation.timingCurve(0.25, 0.1, 0.25, 1, duration: 2).repeatForever(autoreverses: true)){
                         isAnimating.toggle()
                     }
                 }
                 .background (.black)
                 }
-        
-}
+
+    }
 
 #Preview {
     ContentView()
