@@ -333,29 +333,162 @@ static let Text: CGFloat = 10
 }
 
 struct ContentView: View {
+    @State private var isAnimating = false
+    let T1 = [ Amber.Amber900, .black, Amber.Amber900,
+             .black, .black, .black,
+               Amber.Amber900, .black,  Amber.Amber900
+            ]
+    
+    let T2 = [ .black, .black, .black,
+               .black, Amber.Amber900, .black,
+               .black, .black,  .black
+              ]
+    
+//    @State private var selectedPattern: String = "T1"
+    
+    
+
     var body: some View {
+        let currentColors = isAnimating ? T2 : T1
         
-        ZStack {
+        ZStack (alignment: .center)
+            {
             MeshGradient(
             width: 3,
             height: 3,
             points: [
-            [0.0, 0.0], [0.5, 0.0], [1.0, 0.0],
-            [0.0, 0.5], [0.5, 0.5], [1.0, 0.5],
-            [0.0, 1.0], [0.5, 1.0], [1.0, 1.0]
-            ],
-            colors: [
-            Red.Red50, Pink.Pink300, Pink.Pink700,
-            Blue.Blue900, Pink.Pink900, Red.Red100,
-            Yellow.Yellow400, Pink.Pink300, Red.Red900
-            ]
+                    [0.0, 0.0], [0.0, 0.5], [0.0, 1.0],
+                    [0.5, 0.0], [0.5, 0.5], [0.5, 1.0],
+                    [1.0, 0.0], [1.0, 0.5], [1.0, 1.0],
+                    ],
+            
+            colors: currentColors
             )
+            .background(Color(DeepOrange.DeepOrange900))
+            .blendMode(.normal).opacity(1.0)
+            .frame(width: 300, height: 300)
             .ignoresSafeArea()
-            Text ("Hello Mesh Gradient")
-            .font(.system(size: Heading.h6))
-            .foregroundColor(Red.Red50)
-        }
-    }
+            .cornerRadius(24)
+
+            
+            VStack {
+                
+                Spacer(minLength: 0)
+                
+                VStack {
+                    
+                    Text("Mesh Gradients")
+                        .font(.system(size: Heading.h5))
+                        .foregroundColor(Neutral.White)
+                        .blendMode(.normal)
+                    Text("The Visual Code")
+                        .font(.system(size: Heading.h6))
+                        .foregroundColor(Gray.Gray500)
+                        .blendMode(.normal)
+                }
+                
+                Spacer(minLength: 0)
+                
+                HStack {
+                    Spacer()
+                    Text("[0.0, 0.0]")
+                        .font(.system(size: 14))
+                        .foregroundColor(Neutral.White)
+                        .blendMode(.normal)
+                    Spacer()
+                    
+                    Text("[0.5, 0.0]")
+                        .font(.system(size: 14))
+                        .foregroundColor(Neutral.White)
+                        .blendMode(.normal)
+                    Spacer()
+                    
+                    Text("[1.0, 0.0]")
+                        .font(.system(size: 14))
+                        .foregroundColor(Neutral.White)
+                        .blendMode(.normal)
+                    Spacer()
+                }
+                
+                Spacer(minLength: 0)
+                
+                HStack {
+                    Spacer()
+                    Text("[0.0, 0.5]")
+                        .font(.system(size: 14))
+                        .foregroundColor(Neutral.White)
+                        .blendMode(.normal)
+                    Spacer()
+                    
+                    Text("[0.5, 0.5]")
+                        .font(.system(size: 14))
+                        .foregroundColor(Neutral.White)
+                        .blendMode(.normal)
+                    Spacer()
+                    
+                    Text("[1.0, 0.5]")
+                        .font(.system(size: 14))
+                        .foregroundColor(Neutral.White)
+                        .blendMode(.normal)
+                    Spacer()
+                }
+                
+                Spacer(minLength: 0)
+                
+                HStack {
+                    Spacer(minLength: 2)
+                    Text("[0.0, 1.0]")
+                        .font(.system(size: 14))
+                        .foregroundColor(Neutral.White)
+                        .blendMode(.normal)
+                    Spacer()
+                    
+                    Text("[0.5, 1.0]")
+                        .font(.system(size: 14))
+                        .foregroundColor(Neutral.White)
+                        .blendMode(.normal)
+                    Spacer()
+                    
+                    Text("[1.0, 1.0]")
+                        .font(.system(size: 14))
+                        .foregroundColor(Neutral.White)
+                        .blendMode(.normal)
+                    Spacer(minLength: 2)
+                }
+                
+                Spacer(minLength: 0)
+                
+                VStack {
+                    Text("U from Left to Right")
+                        .font(.system(size: Heading.h5))
+                        .foregroundColor(Neutral.White)
+                        .blendMode(.normal)
+                    
+                    Text("It's similar to the UV grid in the 3d software")
+                        .font(.system(size: 14))
+                        .foregroundColor(Gray.Gray600)
+                        .blendMode(.normal)
+                        .frame(width: 300)
+                }
+                
+                Spacer(minLength: 0)
+                
+                }
+                .frame(width: 540, height: 930)
+                }
+        
+                .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+                .ignoresSafeArea()
+            
+
+                .onAppear {
+                    withAnimation(.linear(duration: 4).repeatForever(autoreverses: true)) {
+                        isAnimating.toggle()
+                    }
+                }
+                .background (.black)
+                }
+        
 }
 
 #Preview {

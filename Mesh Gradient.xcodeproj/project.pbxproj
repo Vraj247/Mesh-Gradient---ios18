@@ -14,6 +14,7 @@
 		72AA0A312C239CB000751D41 /* Mesh_GradientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AA0A302C239CB000751D41 /* Mesh_GradientTests.swift */; };
 		72AA0A3B2C239CB000751D41 /* Mesh_GradientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AA0A3A2C239CB000751D41 /* Mesh_GradientUITests.swift */; };
 		72AA0A3D2C239CB000751D41 /* Mesh_GradientUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AA0A3C2C239CB000751D41 /* Mesh_GradientUITestsLaunchTests.swift */; };
+		72AA0A4A2C24057E00751D41 /* TestUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AA0A492C24057E00751D41 /* TestUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		72AA0A362C239CB000751D41 /* Mesh GradientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mesh GradientUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		72AA0A3A2C239CB000751D41 /* Mesh_GradientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mesh_GradientUITests.swift; sourceTree = "<group>"; };
 		72AA0A3C2C239CB000751D41 /* Mesh_GradientUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mesh_GradientUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		72AA0A492C24057E00751D41 /* TestUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				72AA0A1F2C239CAF00751D41 /* Mesh_GradientApp.swift */,
 				72AA0A212C239CAF00751D41 /* ContentView.swift */,
+				72AA0A492C24057E00751D41 /* TestUI.swift */,
 				72AA0A232C239CB000751D41 /* Assets.xcassets */,
 				72AA0A252C239CB000751D41 /* Preview Content */,
 			);
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				72AA0A222C239CAF00751D41 /* ContentView.swift in Sources */,
+				72AA0A4A2C24057E00751D41 /* TestUI.swift in Sources */,
 				72AA0A202C239CAF00751D41 /* Mesh_GradientApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
